@@ -72,7 +72,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-aqr1.ipynb
+intro_pandas.ipynb
 
 # pyenv
 .python-version
