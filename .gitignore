@@ -1,3 +1,4 @@
+# CERES - Centro de Ensino Superior Caico
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -71,6 +72,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+aqr1.ipynb
 
 # pyenv
 .python-version
