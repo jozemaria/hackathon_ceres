@@ -5,11 +5,11 @@ class Google:
     def __init__(self, driver):
         self.driver = driver
         self.url = 'http://google.com.br'
-        self.search_bar = 'gLFyf' # class
+        self.search_bar = ' ' # class
         # self.search_bar = 'q' # name
         self.btn_search = 'btnK' # name
         self.btn_lucky = 'btnI' # name
-        self.gmail = 'gb_d'
+        self.gmail = 'gb_he'
 
     def navigate(self):
         self.driver.get(self.url)
@@ -20,7 +20,7 @@ class Google:
         
         self.driver.find_element_by_xpath('//input[@name="q"]').send_keys(word)
         sleep(2)
-        self.driver.find_element_by_name(self.btn_lucky).submit()
+        self.driver.find_element_by_name(self.btn_search).submit()
 
     def email(self):
         # Clicar no E-mail
@@ -29,5 +29,5 @@ class Google:
 ff = webdriver.Firefox()
 g = Google(ff)
 g.navigate()
-g.search('Campus Party Natal')
+# g.search('Hackathon Ceres')
 g.email()
